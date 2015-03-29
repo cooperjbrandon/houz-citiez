@@ -1,0 +1,23 @@
+{
+  "name": "houz-city-namez",
+  "version": "1.0.0",
+  "description": "microservice pushing city names to queue",
+  "main": "city-names.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cooperjbrandon/houz-city-namez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooperjbrandon/houz-city-namez/issues"
+  },
+  "homepage": "https://github.com/cooperjbrandon/houz-city-namez",
+  "dependencies": {
+    "amqp": "^0.2.4",
+    "cli-color": "^0.3.3"
+  }
+}
