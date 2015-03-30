@@ -10,8 +10,10 @@ clc = require('cli-color');
 exchangeName = 'houz-exchange';
 routingKey = 'citynames';
 
-connection = amqp.createConnection();
-connection.on('ready', connectionReady);
+var beginSetup = function() {
+	connection = amqp.createConnection();
+	connection.on('ready', connectionReady);
+};
 
 var connectionReady = function() {
 	console.log(clc.blue('The connection is ready'));
@@ -33,3 +35,5 @@ var pushCityNamesToExchange = function() {
 		exchange.publish(routingKey, { city: citynames[i] }); //routingKey, message
 	}
 };
+
+beginSetup();
