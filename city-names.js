@@ -1,14 +1,15 @@
 var citynames = ['san-jose-ca', 'san-francisco-ca']; //TODO: add more city names
 
-var amqp, clc,
-		connection, routingKey,
+var amqp, clc, config,
+		connection, publishRoutingKey,
 		exchange, exchangeName;
 
 amqp = require('amqp');
 clc = require('cli-color');
+config = require('houz-config');
 
-exchangeName = 'houz-exchange';
-routingKey = 'citynames';
+exchangeName = config.exchangeName;
+publishRoutingKey = config.routingKey.cities;
 
 var beginSetup = function() {
 	connection = amqp.createConnection();
@@ -32,7 +33,7 @@ var exchangeReady = function() {
 
 var pushCityNamesToExchange = function() {
 	for (var i = 0; i < citynames.length; i++) {
-		exchange.publish(routingKey, { city: citynames[i] }); //routingKey, message
+		exchange.publish(publishRoutingKey, { city: citynames[i] }); //routingKey, message
 	}
 };
 
