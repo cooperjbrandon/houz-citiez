@@ -37,4 +37,5 @@ var pushCityNamesToExchange = function() {
 	}
 };
 
-beginSetup();
+module.exports.beginSetup = beginSetup;
+module.exports.citynames = citynames;

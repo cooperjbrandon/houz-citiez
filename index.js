@@ -1,0 +1,1 @@
+require('./city-names').beginSetup();
