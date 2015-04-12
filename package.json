@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cooperjbrandon/houz-city-namez.git"
+    "url": "https://github.com/cooperjbrandon/houz-citiez.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cooperjbrandon/houz-city-namez/issues"
+    "url": "https://github.com/cooperjbrandon/houz-citiez/issues"
   },
-  "homepage": "https://github.com/cooperjbrandon/houz-city-namez",
+  "homepage": "https://github.com/cooperjbrandon/houz-citiez",
   "dependencies": {
     "amqp": "^0.2.4",
     "cli-color": "^0.3.3",
