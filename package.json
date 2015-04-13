@@ -1,5 +1,5 @@
 {
-  "name": "houz-city-namez",
+  "name": "houz-citiez",
   "version": "1.0.0",
   "description": "microservice pushing city names to queue",
   "main": "city-names.js",
